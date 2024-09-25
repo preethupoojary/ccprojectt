@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tip.css">
+    <script src="tip.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="Calculator">
+            <header><h1>Tip Calculator</h1></header>
+            <form >
+                <label for="amount">Amount:
+                    <input type="number" id="amt" placeholder="Enter the Amount" required>
+                </label><br>
+                <label for="amount" >Tip Percentage:
+                    <select name="tip" id="tip" required>
+                        <option value="30">30%</option>
+                        <option value="25">25%</option>
+                        <option value="20">20%</option>
+                        <option value="15">15%</option>
+                        <option value="10">10%</option>
+                        <option value="5">5%</option>
+                    </select>
+                </label><br>
+                <label for="persons">Persons:
+                    <input type="number" id="persons" required placeholder="How many are sharing the bill?">
+                </label><br>
+                </form>
+                <section class="tip-wrap">
+                    <p>You should tip:</p>
+                    <h3 class="tipval" id="tipval">₹ 0</h3>
+                    <button onclick="tipCalc()">Calculate</button>
+
+                </section>
+        </div>
+    </div>
+</body>
+</html>
